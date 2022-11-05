@@ -2,17 +2,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BOJ1000 {
+public class BOJ2558 {
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String nextLine = bufferedReader.readLine();
+        String firstLine = bufferedReader.readLine();
+        String secondLine = bufferedReader.readLine();
 
-        String[] nums = nextLine.split(" ");
-
-        int a = Integer.parseInt(nums[0]);
-        int b = Integer.parseInt(nums[1]);
+        int a = Integer.parseInt(firstLine);
+        int b = Integer.parseInt(secondLine);
 
         System.out.println(a + b);
     }
