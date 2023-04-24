@@ -1,6 +1,5 @@
-s = input()
+# 팰린드롬인지 확인하기
+# https://www.acmicpc.net/problem/10988
 
-if(s == s[::-1]):
-	print(1)
-else:
-	print(0)
+s = input()
+print(1 if s == s[::-1] else 0)
