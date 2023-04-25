@@ -1,13 +1,14 @@
-input_list = [] # list의 선언
+# 최댓값
+# https://www.acmicpc.net/problem/2562
+numbers = []
 
-n = 9 # testcase
+n = 9
+while n:
+    numbers.append(int(input()))
+    n -= 1
 
-while(n):
-	input_list.append(int(input()))
-	n = n - 1
-	
-max_value = max(input_list) # 파이썬의 내장함수 max를 사용해 list의 최대값을 반환
-max_index = input_list.index(max_value) # index 함수를 사용해 해당 값의 index을 반환 
+max_value = max(numbers)
+max_index = numbers.index(max_value)
 
 print(max_value)
 print(max_index + 1)
